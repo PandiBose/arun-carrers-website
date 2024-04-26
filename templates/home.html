@@ -4,10 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arun carrers</title>
+  <title>careers</title>
 </head>
 <body>
-  Hello guys, welcome!
-  <img src="https://flask.palletsprojects.com/en/3.0.x/installation/#install-flask" alt="flask_page">
+  Hello guys, welcome! {{name}}
+  <img src="C:\Users\31455\Downloads\smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.avif" alt="flask_page">
+
+  <div>
+    {% for job in jobs %}
+      {% include 'jobitem.html' %}
+    {% endfor %}
+  </div>
+  
 </body>
 </html>
